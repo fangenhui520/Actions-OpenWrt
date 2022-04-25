@@ -13,6 +13,7 @@ name: Build OpenWrt K2P
 on:
   repository_dispatch:
   workflow_dispatch:
+  
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -27,7 +28,6 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
-  
 
 jobs:
   build:
@@ -147,8 +147,8 @@ jobs:
       run: |
         echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
-        [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
-        [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
+        [ $UPLOAD_COWTRANSFER = true ] && echo "馃敆 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
+        [ $UPLOAD_WETRANSFER = true ] && echo "馃敆 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
