@@ -14,3 +14,4 @@
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 sed -i 's/$(Device\/tplink-4mlzma)/$(Device\/tplink-8mlzma)/g' target/linux/ar71xx/image/tiny-tp-link.mk
 sed -i 's/$(Device\/tplink-4mlzma)/$(Device\/tplink-8mlzma)/g' target/linux/ath79/image/tiny-tp-link.mk
+sed -i 's/DEVICE_TITLE := TP-LINK TL-WR703N v1/DEVICE_TITLE := PingSheng/g' target/linux/ar71xx/image/tiny-tp-link.mk
