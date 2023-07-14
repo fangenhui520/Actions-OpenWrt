@@ -1,0 +1,4 @@
+00 06 * * * mtkwifi up
+00 00 * * * mtkwifi down
+#00 05 * * * /etc/init.d/aria2.sh
+#00 09 * * * /etc/init.d/aria2.sh
