@@ -27,4 +27,4 @@
 sed -i "s/OpenWrt /Fang build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings # 版本号里显示自己时间
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
-cp -Rf $GITHUB_WORKSPACE/files/ /package/base-files/files/
+cp -Rf $GITHUB_WORKSPACE/files/* package/base-files/files/
