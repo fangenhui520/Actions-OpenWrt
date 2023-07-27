@@ -1,8 +1,0 @@
-#!/bin/sh /etc/rc.common
-START=99
-start() {
-    /mnt/sda1/alist/alist restart
-}
-stop() {
-   /mnt/sda1/alist/alist stop
-}
