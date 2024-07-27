@@ -1,2 +1,3 @@
 #00 06 * * * mtkwifi up
 #00 00 * * * mtkwifi down
+#30 4 * * 1 sleep 120 && touch /etc/banner && reboot #周一4:30，延时120秒后自动重启
