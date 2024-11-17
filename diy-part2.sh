@@ -27,3 +27,10 @@
 #sed -i "s/OpenWrt /Fang build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings # 版本号里显示自己时间
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+
+rm -rf ./feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+rm -rf ./feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
+rm -rf ./feeds/luci/applications/luci-app-passwall
+rm -rf  ./feeds/packages/net/natmap
+rm -rf ./feeds/luci/applications/luci-natmap
