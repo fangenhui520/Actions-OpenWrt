@@ -34,5 +34,9 @@ rm -rf ./feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 rm -rf ./feeds/luci/applications/luci-app-passwall
 rm -rf  ./feeds/packages/net/natmap
 rm -rf ./feeds/luci/applications/luci-app-natmap
+
+cp -rf ./feeds/small8/xray-core ./feeds/packages/net
+cp -rf ./feeds/small8/luci-app-passwall ./feeds/luci/applications/luci-app-passwall
+cp -rf ./feeds/small8/luci-app-natmap ./feeds/luci/applications/luci-app-natmap
 ./scripts/feeds update -a
 ./scripts/feeds install -a
