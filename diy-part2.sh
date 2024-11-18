@@ -33,4 +33,4 @@ git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/l
 rm -rf ./feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 rm -rf ./feeds/luci/applications/luci-app-passwall
 rm -rf  ./feeds/packages/net/natmap
-rm -rf ./feeds/luci/applications/luci-natmap
+rm -rf ./feeds/luci/applications/luci-app-natmap
