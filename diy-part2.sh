@@ -39,4 +39,4 @@ rm -rf ./feeds/luci/applications/luci-app-natmap
 cp -rf ./feeds/small8/xray-core ./feeds/packages/net
 cp -rf ./feeds/small8/luci-app-passwall ./feeds/luci/applications/luci-app-passwall
 cp -rf ./feeds/small8/luci-app-natmap ./feeds/luci/applications/luci-app-natmap
-cp -rf ./feeds/small8/luci-app-natmap/natmap ./feeds/packages/net/natmap
+cp -rf ./feeds/small8/luci-app-natmap/natmap ./feeds/packages/net
