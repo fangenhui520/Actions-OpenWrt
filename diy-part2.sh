@@ -29,14 +29,14 @@
 #sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/ramips/Makefile
 #sed -i 's/KERNEL_TESTING_PATCHVER:=5.4/KERNEL_TESTING_PATCHVER:=5.10/g' target/linux/ramips/Makefile
 
-rm -rf ./feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/lang/golang
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/lang/golang
 rm -rf ./feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 rm -rf ./feeds/luci/applications/luci-app-passwall
-#rm -rf  ./feeds/packages/net/natmap
-#rm -rf ./feeds/luci/applications/luci-app-natmap
+rm -rf  ./feeds/packages/net/natmap
+rm -rf ./feeds/luci/applications/luci-app-natmap
 
 cp -rf ./feeds/small8/xray-core ./feeds/packages/net/xray-core
 cp -rf ./feeds/small8/luci-app-passwall ./feeds/luci/applications/luci-app-passwall
-#cp -rf ./feeds/small8/luci-app-natmap ./feeds/luci/applications/luci-app-natmap
-#cp -rf ./feeds/small8/luci-app-natmap/natmap ./feeds/packages/net/natmap
+cp -rf ./feeds/small8/luci-app-natmap ./feeds/luci/applications/luci-app-natmap
+cp -rf ./feeds/small8/luci-app-natmap/natmap ./feeds/packages/net/natmap
