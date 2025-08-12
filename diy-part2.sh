@@ -34,7 +34,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 24.x feeds/packages/l
 rm -rf ./feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 rm -rf ./feeds/luci/applications/luci-app-passwall
 rm -rf  ./feeds/packages/net/natmap
-git clone https://github.com/openwrt/packages/tree/master/net/natmap /feeds/packages/net/natmap
+git clone https://github.com/muink/openwrt-natmapt /feeds/packages/net/natmap
 
 
 cp -rf ./feeds/small8/xray-core ./feeds/packages/net/xray-core
