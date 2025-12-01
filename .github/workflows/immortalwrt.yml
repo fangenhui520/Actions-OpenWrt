@@ -14,12 +14,12 @@ on:
 env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: master
-  DEVICE_NAME: X86-Im
-  FILES: immortalwrt/files
-  FEEDS_CONF: immortalwrt/feeds.conf.default
-  CONFIG_FILE: immortalwrt/config.x86.bak
-  DIY_P1_SH: immortalwrt/diy-part1.sh
-  DIY_P2_SH: immortalwrt/diy-part2.sh
+  DEVICE_NAME: immortalwrt
+  FILES: files
+  FEEDS_CONF: feeds.conf.default
+  CONFIG_FILE: k2p
+  DIY_P1_SH: diy-part1.sh
+  DIY_P2_SH: diy-part2.sh
   TZ: Asia/Shanghai
 
 jobs:
